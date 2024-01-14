@@ -3,7 +3,7 @@
   background: $black;
   padding: 3rem 0;
   @include tablet {
-    background-image: url("/build/img/why.jpg"),
+    background-image: url("../img/why.jpg"),
       linear-gradient(to left, $black, $black);
     background-position: right, left;
     background-size: 45% 100%, 55% 100%;
