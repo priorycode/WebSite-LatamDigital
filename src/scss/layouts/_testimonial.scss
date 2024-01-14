@@ -1,0 +1,105 @@
+.testimonial {
+  margin: $spacing-45 1.6rem;
+  @include tablet {
+    margin: $spacing-45 2rem;
+  }
+  @include desktop {
+    width: 95%;
+    max-width: 122rem;
+    margin: $spacing-150 auto;
+    padding: 0;
+
+    display: flex;
+  }
+}
+.info-test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    align-items: start;
+    margin-bottom: 0;
+  }
+  h2 {
+    width: 19.9rem;
+    text-align: center;
+    @include tablet {
+      width: 35rem;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+  .into {
+    text-align: center;
+    color: $gray;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.187%;
+    @include tablet {
+      width: 50rem;
+      text-align: center;
+    }
+    @include desktop {
+      text-align: left;
+    }
+  }
+  margin-bottom: 2.5rem;
+}
+
+.card-test {
+  background: #f6f6f6;
+  padding: 5rem 3.7rem;
+  @include desktop{
+    width: 100%;
+  }
+}
+.person {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  .img {
+    width: 10rem;
+    height: 10rem;
+    .perfil {
+      width: 10rem;
+      height: 10rem;
+      object-fit: cover;
+      border-radius: 10rem;
+    }
+  }
+  .info-person {
+    p {
+      font-family: $font-poppins;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    span {
+      color: $gray;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 135.187%;
+    }
+  }
+  margin-bottom: 3.4rem;
+}
+
+
+.description-text {
+  color: $gray;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 146.187%;
+}
+
+
+.container-testimonial{
+  width: 100%;
+  @include desktop{
+    width: 70%;
+  }
+}

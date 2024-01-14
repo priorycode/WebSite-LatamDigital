@@ -1,0 +1,60 @@
+.hero {
+  background: url(/build/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include desktop {
+    height: 81.5rem;
+  }
+}
+.container-info-hero {
+  background: #37393fe8;
+  backdrop-filter: blur(9.5px);
+  display: flex;
+  align-items: center;
+  padding: 7rem 1.6rem;
+  @include tablet {
+    padding: 12rem 2rem;
+  }
+  @include desktop {
+    width: 43%;
+    height: 100%;
+    padding: 0 11.6rem;
+  }
+  .info-hero {
+    p,
+    h1 {
+      color: $white;
+    }
+
+    .sub-title {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: $spacing-10;
+      p {
+        font-size: 1.6rem;
+      }
+    }
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: left;
+      margin-bottom: $spacing-20;
+      span {
+        color: $green;
+      }
+    }
+    .description {
+      width: 30rem;
+      color: $gray-B9;
+      margin-bottom: $spacing-34;
+      @include tablet {
+        width: 60%;
+      }
+      @include desktop {
+        width: 90%;
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.footer {
+  background: $black;
+  margin-top: 4.5rem;
+  padding: 4rem 1.6rem;
+  @include tablet {
+    padding: 4.5rem 2rem;
+  }
+  @include desktop {
+    margin-top: 15rem;
+    padding: 9.5rem 0 4rem 0;
+  }
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  @include tablet {
+    gap: 4.5rem;
+  }
+  @include desktop {
+    width: 95%;
+    max-width: 122rem;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+}
+
+.header-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+    border-bottom: 0.1rem solid #6c6d72;
+  }
+  .logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .nombre {
+      display: flex;
+      color: $white;
+      font-family: $font-poppins;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .container-contact-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include tablet {
+      flex-direction: row;
+      align-items: center;
+      gap: 6rem;
+    }
+    .item-contact {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .cont-img {
+        background: #4c4d52;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10rem;
+        transition: 0.3s background-color ease-out;
+        &:hover {
+          background: $green;
+        }
+        @include desktop {
+          width: 6.8rem;
+          height: 6.8rem;
+        }
+        svg {
+          width: 2.4rem;
+          height: 2.4rem;
+          fill: $white;
+        }
+      }
+      .cont-info {
+        h4,
+        p {
+          color: $white;
+        }
+        h4 {
+          font-family: $font-poppins;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-bottom: 0.3rem;
+          @include desktop {
+            font-size: 2rem;
+          }
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.main-footer {
+  display: flex;
+  gap: 4rem;
+
+  @include desktop {
+    gap: 10rem;
+    align-items: center;
+  }
+
+  .container-link {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    .title-list {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      h4 {
+        font-family: $font-poppins;
+        font-size: 1.8rem;
+        color: $white;
+        margin: 0;
+        @include desktop {
+          font-size: 2rem;
+        }
+      }
+    }
+    .list-nav-footer {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        a {
+          color: $white;
+          transition: 0.3s color ease-out;
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-foot {
+  @include desktop {
+    border-top: 0.1rem solid #6c6d72;
+    padding-top: 2.2rem;
+  }
+  p {
+    text-align: left;
+    color: $white;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.523%;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.container-maps {
+  width: 561px;
+  height: 245px;
+  display: none;
+  @include desktop{
+    display: block;
+  }
+  iframe{
+    height: 100%;
+    width: 100%;
+  }
+}

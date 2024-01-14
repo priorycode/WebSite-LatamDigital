@@ -1,0 +1,113 @@
+.active-link {
+  font-weight: 600;
+  color: $purple;
+}
+
+.btn-hero {
+  padding: 0.84rem 1.4rem;
+  @include desktop {
+    padding: 2.1rem 3.5rem;
+  }
+}
+
+.btn-call {
+  display: block;
+  width: fit-content;
+  padding: 1.8rem 2.7rem;
+  @include tablet {
+    padding: 2.1rem 2.7rem;
+  }
+}
+
+.btn-blue {
+  background: $blue;
+  color: $white;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  transition: 0.3s box-shadow ease-in;
+  &:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 10px;
+  }
+}
+
+.btn-green {
+  background: $green;
+  color: $black;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  @include tablet {
+    font-size: 1.8rem;
+  }
+}
+
+.punter {
+  width: 11px;
+  height: 11px;
+  background: $green;
+}
+
+.link-call-action {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  @include desktop {
+    font-size: 1.8rem;
+  }
+  .line-link {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    height: 0.4rem;
+    border-radius: 10rem;
+    background: $green;
+    width: 0;
+    transition: 0.3s width ease-out;
+  }
+  &:hover {
+    .line-link {
+      width: 100%;
+    }
+  }
+}
+.link-card {
+  color: $purple;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.link-why {
+  color: $green;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+  .liner {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    height: 0.4rem;
+    border-radius: 10rem;
+    background: $green;
+    width: 0;
+    transition: 0.3s width ease-out;
+  }
+  &:hover {
+    .liner {
+      width: 100%;
+    }
+  }
+}

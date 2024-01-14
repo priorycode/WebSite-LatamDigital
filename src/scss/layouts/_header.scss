@@ -1,0 +1,198 @@
+.header {
+}
+
+.container-cabe {
+  display: none;
+  background: $black;
+  padding: 1.2rem 1.6rem;
+  @include tablet {
+    padding: 2.1rem 0;
+    display: flex;
+  }
+  @include desktop {
+    height: 6rem;
+  }
+}
+.list-cabe {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 122rem;
+    margin: 0 auto;
+  }
+  .list-1 {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      justify-content: start;
+      gap: 4.2rem;
+    }
+  }
+  .item-clock {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    p,
+    a {
+      color: $white;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    svg {
+      fill: $white;
+      width: 2rem;
+    }
+  }
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 7.4rem;
+  padding: 1.6rem 0;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  @include tablet {
+    padding: 0;
+  }
+  @include desktop {
+    padding: 3.6rem 0;
+    height: 13.1rem;
+    width: 95%;
+    max-width: 122rem;
+    margin: 0 auto;
+  }
+}
+
+.logo-nav {
+  width: 4.2rem;
+  height: 4.2rem;
+  margin-left: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @include desktop {
+    margin: 0;
+  }
+  p {
+    display: none;
+    font-family: $font-poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    span {
+      color: $purple;
+    }
+    @include tablet {
+      display: flex;
+    }
+  }
+}
+
+.container-nav-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.list-nav {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 7.4rem 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+
+  position: absolute;
+  background: $white;
+  width: 80%;
+  height: 1000vh;
+  top: 0;
+  right: -100%;
+  position: fixed;
+  border-radius: 1rem 0 0 1rem;
+
+  transition: 0.3s right ease-out;
+  @include tablet {
+    padding: 8.6rem 0;
+    top: 6.7rem;
+  }
+  @include desktop {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 4.2rem;
+    padding: 0;
+  }
+  .item-link {
+    position: relative;
+  }
+  .line {
+    position: absolute;
+    height: 0.4rem;
+    border-radius: 10rem;
+    background: $purple;
+    width: 0;
+    left: 0;
+    bottom: -0.05rem;
+    transition: 0.3s width ease-in;
+  }
+  .link {
+    font-size: 1.8rem;
+    transition: 0.3s color ease-in;
+    &:hover {
+      color: $purple;
+      .line {
+        width: 100%;
+      }
+    }
+  }
+  .active-link {
+    .line {
+      width: 100%;
+    }
+  }
+
+  .btn-x {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.6rem;
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.mostrar {
+  right: 0;
+}
+.btn-bar {
+  margin-right: 1.6rem;
+  border: none;
+  background: transparent;
+  padding: 0;
+  @include desktop {
+    margin-right: 0;
+    display: none;
+  }
+}
