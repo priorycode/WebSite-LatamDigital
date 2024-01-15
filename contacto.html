@@ -23,6 +23,8 @@
 
     <!-- Css main -->
     <link rel="stylesheet" href="build/css/app.css">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-body>
@@ -94,8 +96,8 @@
     <main class="main">
 
         <section class="hero-nosotros hero-contacto">
-            <div class="container-info-hero">
-                <div class="info-hero">
+            <div class="container-info-hero" data-aos="fade-right" data-aos-duration="1000">
+                <div class="info-hero" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="sub-title">
                         <div class="punter"></div>
                         <p>Contáctanos</p>
@@ -109,8 +111,8 @@
         </section>
 
         <section class="container-info-nosotros">
-            <img class="img-conten" src="build/img/contact-info.jpg" alt="imagen de mujer sentada escribiendo">
-            <div class="nosotros-info">
+            <img class="img-conten" src="build/img/contact-info.jpg" alt="imagen de mujer sentada escribiendo" data-aos="fade-right" data-aos-duration="1000">
+            <div class="nosotros-info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="sub-subtitle">
                     <div class="punter"></div>
                     <p>Hablemos</p>
@@ -161,7 +163,7 @@
             </div>
         </section>
 
-        <section class="container-formulario" id="formulario">
+        <section class="container-formulario" id="formulario" data-aos="fade-up" data-aos-duration="1000">
             <div class="section-title">
                 <div class="sub-subtitle">
                     <div class="punter"></div>
@@ -183,9 +185,9 @@
     <!-- End Main -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
         <div class="container-footer">
-            <div class="header-footer">
+            <div class="header-footer" data-aos="fade-up" data-aos-duration="1000">
                 <a class="logo-footer" href="index.html">
                     <img src="build/img/logo-black.svg" alt="Logo de Latin Digital">
                     <p class="nombre">Latam <span>Digital</span></p>
@@ -232,17 +234,17 @@
                 </div>
             </div>
 
-            <div class="main-footer">
+            <div class="main-footer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container-link">
                     <div class="title-list">
                         <div class="punter"></div>
                         <h4>Enlaces</h4>
                     </div>
                     <ul class="list-nav-footer">
-                        <li><a href="#" class="link-footer">Inicio</a></li>
-                        <li><a href="#" class="link-footer">Nosotros</a></li>
-                        <li><a href="#" class="link-footer">Servicios</a></li>
-                        <li><a href="#" class="link-footer">Contacto</a></li>
+                        <li><a href="index.html" class="link-footer">Inicio</a></li>
+                        <li><a href="nosotros.html" class="link-footer">Nosotros</a></li>
+                        <li><a href="servicios.html" class="link-footer">Servicios</a></li>
+                        <li><a href="contacto.html" class="link-footer">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="container-link">
@@ -251,10 +253,10 @@
                         <h4>Nuestros Servicios</h4>
                     </div>
                     <ul class="list-nav-footer">
-                        <li><a href="#">Elaboración de Requerimientos Internacionales.</a></li>
-                        <li><a href="#">Elaboración de Ofertas</a></li>
-                        <li><a href="#">Presentación de consultas y observaciones.</a></li>
-                        <li><a href="#">Revisión Legal de los resultados del Proceso.</a></li>
+                        <li><a href="servicios.html">Elaboración de Requerimientos Internacionales.</a></li>
+                        <li><a href="servicios.html">Elaboración de Ofertas</a></li>
+                        <li><a href="servicios.html">Presentación de consultas y observaciones.</a></li>
+                        <li><a href="servicios.html">Revisión Legal de los resultados del Proceso.</a></li>
                     </ul>
                 </div>
                 <div class="container-maps">
@@ -281,8 +283,13 @@
     <script src="build/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="build/vendor/php-email-form/validate.js"></script>
 
+    <!-- animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script main -->
     <script src="build/js/bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

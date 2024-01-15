@@ -1,12 +1,9 @@
-/*--------------------------------------------------------------
-  # Features
-  --------------------------------------------------------------*/
 .container-servicios {
   margin-top: 95px;
 }
 
 .container-controller {
-  background: #F4F4F4;
+  background: #f4f4f4;
   padding: 5rem 3.5rem;
 }
 
@@ -22,7 +19,7 @@
   border: 0;
   padding: 1rem 2rem;
   transition: 0.3s;
-  color: #556270;
+  color: $black;
   border-radius: 0;
   border-right: 2px solid white;
   font-weight: 600;
@@ -31,13 +28,13 @@
 
 .features .nav-link:hover {
   color: #fff;
-  background: #6B77E5;
+  background: $purple;
 }
 
 .features .nav-link.active {
   color: #fff;
   /* border-color: #6B77E5; */
-  background-color: #6B77E5;
+  background-color: $purple;
 }
 
 .tab-content {
@@ -75,6 +72,6 @@
 
   .features .nav-link.active {
     color: #fff;
-    background: #6B77E5;
+    background: $purple;
   }
 }

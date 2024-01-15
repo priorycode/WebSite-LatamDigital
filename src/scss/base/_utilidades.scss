@@ -11,8 +11,8 @@
 }
 
 .btn-call {
-  display: block;
-  width: fit-content;
+  // display: block;
+  // width: fit-content;
   padding: 1.8rem 2.7rem;
   @include tablet {
     padding: 2.1rem 2.7rem;
@@ -41,6 +41,7 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+
   @include tablet {
     font-size: 1.8rem;
   }
