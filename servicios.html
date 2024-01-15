@@ -12,6 +12,11 @@
     <link href="build/img/logo-sf.webp" rel="icon">
     <link href="build/img/logo.webp" rel="apple-touch-icon">
 
+    <!-- Link de carga -->
+    <link rel="preload" href="tu-archivo.css" as="style">
+    <link rel="preload" href="tu-script.js" as="script">
+    <link rel="preload" href="tu-imagen.jpg" as="image">
+
     <!-- Css Bootstrap -->
     <link rel="stylesheet" href="build/vendor/animate.css/animate.min.css">
     <link rel="stylesheet" href="build/vendor/bootstrap/css/bootstrap.min.css">
@@ -25,7 +30,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 
-<body>
+<body data-body>
 
     <!-- Header -->
     <header class="header">

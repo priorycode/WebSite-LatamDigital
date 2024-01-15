@@ -1,0 +1,92 @@
+.process {
+  margin: 4.5rem 0;
+  padding: 0 1.6rem;
+  @include tablet {
+    padding: 0 2rem;
+  }
+  @include desktop {
+    width: 95%;
+    max-width: 122rem;
+    margin: 15rem auto;
+  }
+}
+
+.container-process {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 4.5rem;
+    justify-content: center;
+  }
+  @include desktop {
+    row-gap: 5rem;
+  }
+}
+
+.card-process {
+  width: 100%;
+  @include tablet {
+    width: 35rem;
+  }
+  @include desktop {
+    width: 37rem;
+  }
+  position: relative;
+  padding: 5rem 4.3rem;
+  background: $gray-F4;
+  .icon-process {
+    background: $green;
+    position: absolute;
+    border-radius: 10rem;
+    top: -3rem;
+    left: 42%;
+    width: 7.2rem;
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s background-color ease-out;
+    &:hover {
+      background: $purple;
+    }
+    @include desktop {
+      left: 40%;
+    }
+    svg {
+      fill: $white;
+      width: 4.3rem;
+      height: 4.3rem;
+    }
+  }
+  .info-process {
+    margin-top: 1.5rem;
+    @include desktop{
+        margin-top: 2.2rem;
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-family: $font-poppins;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 127%;
+      margin-bottom: 1.6rem;
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+        text-align: center;
+      color: $gray;
+    }
+  }
+}

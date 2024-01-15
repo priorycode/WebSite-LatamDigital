@@ -11,6 +11,8 @@ body {
   font-family: $font-inter;
   font-size: 1.6rem;
   line-height: 1.8;
+
+  transition: background-color 0.3s ease;
 }
 p {
   margin: 0;
@@ -79,10 +81,10 @@ h3 {
 }
 h4 {
   font-size: 2rem;
-  @include tablet{
+  @include tablet {
     font-size: 2.4rem;
   }
-  @include desktop{
+  @include desktop {
     font-size: 3rem;
   }
 }

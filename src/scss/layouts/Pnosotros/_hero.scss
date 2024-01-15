@@ -1,0 +1,17 @@
+.hero-nosotros {
+  background-image: url(../img/about-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  @include desktop{
+    height: 45.8rem;
+  }
+  .container-info-hero {
+    height: 100%;
+    .info-hero{
+        .description{
+            margin: 0;
+        }
+    }
+  }
+}

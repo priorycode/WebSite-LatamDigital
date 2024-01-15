@@ -1,0 +1,69 @@
+.container-valores-sec {
+  background: url(../img/valores.jpg);
+  background-position: center;
+}
+.valores {
+  background: rgba(248, 248, 255, 0.95);
+}
+.container-valores {
+  padding: 3rem 1.6rem;
+  @include tablet {
+    padding: 4.5rem 2rem;
+  }
+  @include desktop {
+    padding: 9.4rem 0;
+    width: 95%;
+    max-width: 122rem;
+    margin: 0 auto;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 3.4rem;
+  @include tablet{
+    grid-template-columns: repeat(2,1fr);
+  }
+  @include desktop {
+    grid-template-columns: repeat(4,1fr);
+    gap: 6.8rem;
+  }
+}
+.card-valor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+  h4 {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $gray;
+  }
+  .container-img {
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 10rem;
+    transition: 0.3s background-color ease-out;
+    svg {
+      margin: 1.5rem;
+      fill: $purple;
+    }
+    &:hover {
+      background: $purple;
+      svg {
+        fill: $white;
+      }
+    }
+  }
+}
