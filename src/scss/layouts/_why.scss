@@ -3,17 +3,27 @@
   background: $black;
   padding: 3rem 0;
   @include tablet {
-    background-image: url("../img/why.jpg"),
-      linear-gradient(to left, $black, $black);
-    background-position: right, left;
-    background-size: 45% 100%, 55% 100%;
+    background-image: url(../img/why.jpg);
     background-repeat: no-repeat;
-    padding: 3rem 0;
+    background-size: contain;
+    background-position: right;
+    
+    // background-image: url("../img/why.jpg"),
+    //   linear-gradient(to left, $black, $black);
+    // background-position: right, left;
+    // background-size: 45% 100%, 55% 100%;
+    // background-repeat: no-repeat;
+    // padding: 3rem 0;
   }
 
   @include desktop {
     height: 60rem;
+    padding: 0;
   }
+}
+.container-back {
+  height: 100%;
+  background: linear-gradient(to right, $black 60%, transparent 40%);
 }
 .container-why-info {
   padding: 0 1.6rem;

@@ -42,6 +42,10 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+  transition: 0.3s box-shadow ease-in;
+  &:hover{
+    box-shadow: $green 0 1px 5px;
+  }
 
   @include tablet {
     font-size: 1.8rem;
@@ -87,6 +91,10 @@
   font-weight: 600;
   line-height: normal;
   text-transform: capitalize;
+  transition: .3s font-size ease-in-out;
+  &:hover{
+    font-size: 1.8rem;
+  }
 }
 
 .link-why {
