@@ -54,62 +54,63 @@
       line-height: normal;
     }
   }
-  .container-contact-footer {
+}
+
+.container-contact-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+  }
+  .item-contact {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    @include tablet {
-      flex-direction: row;
-      align-items: center;
-      gap: 6rem;
-    }
-    .item-contact {
+    align-items: center;
+    gap: 1rem;
+    .cont-img {
+      background: #4c4d52;
+      width: 4rem;
+      height: 4rem;
       display: flex;
       align-items: center;
-      gap: 1rem;
-      .cont-img {
-        background: #4c4d52;
-        width: 4rem;
-        height: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10rem;
-        transition: 0.3s background-color ease-out;
-        &:hover {
-          background: $green;
-        }
+      justify-content: center;
+      border-radius: 10rem;
+      transition: 0.3s background-color ease-out;
+      &:hover {
+        background: $green;
+      }
+      @include desktop {
+        width: 6.8rem;
+        height: 6.8rem;
+      }
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: $white;
+      }
+    }
+    .cont-info {
+      h4,
+      p {
+        color: $white;
+      }
+      h4 {
+        font-family: $font-poppins;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0.3rem;
         @include desktop {
-          width: 6.8rem;
-          height: 6.8rem;
-        }
-        svg {
-          width: 2.4rem;
-          height: 2.4rem;
-          fill: $white;
+          font-size: 2rem;
         }
       }
-      .cont-info {
-        h4,
-        p {
-          color: $white;
-        }
-        h4 {
-          font-family: $font-poppins;
-          font-size: 1.6rem;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal;
-          margin-bottom: 0.3rem;
-          @include desktop {
-            font-size: 2rem;
-          }
-        }
-        p {
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-        }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
       }
     }
   }

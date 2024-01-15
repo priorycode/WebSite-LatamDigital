@@ -26,15 +26,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Css main -->
     <link rel="stylesheet" href="build/css/app.css">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-body>
 
     <!-- Header -->
     <header class="header">
-        <div class="container-cabe">
+        <div class="container-cabe" data-aos="fade-down" data-aos-duration="500">
             <ul class="list-cabe">
                 <div class="list-1">
                     <li>
@@ -62,7 +65,7 @@
                 </li>
             </ul>
         </div>
-        <div class="container-nav">
+        <div class="container-nav" data-aos="fade-zoom-in" data-aos-delay="300">
             <a class="logo-nav" href="index.html">
                 <img src="/build/img/logo-black.svg" alt="Logo de Latin Digital">
                 <p>Latam <span>Digital</span></p>
@@ -99,8 +102,8 @@
     <main class="main">
 
         <section class="hero">
-            <div class="container-info-hero">
-                <div class="info-hero">
+            <div class="container-info-hero" data-aos="fade-right" data-aos-duration="500">
+                <div class="info-hero" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                     <div class="sub-title">
                         <div class="punter"></div>
                         <p>Bienvenido a Latam Digital</p>
@@ -109,14 +112,14 @@
                     <h1 class="title">Expertos en Asesoría para <span>Procesos</span> de Selección Internacional</h1>
                     <p class="description">Ofrecemos asesoramiento técnico experto para tu participación en procesos de
                         selección internacionales.</p>
-                    <a href="#" class="btn-call btn-green">Ver nuestros servicios</a>
+                    <a href="servicios.html#servicios" class="btn-call btn-green">Ver nuestros servicios</a>
                 </div>
             </div>
         </section>
 
         <section class="presentation">
             <div class="container-presentation">
-                <div class="container-presentation-call">
+                <div class="container-presentation-call" data-aos="fade-right" data-aos-duration="500">
                     <div class="call-info">
                         <img src="build/img/about.webp" alt="Imagen de una reunión">
                         <div class="info">
@@ -130,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-presentation-info">
+                <div class="container-presentation-info" data-aos="fade-left" data-aos-duration="500">
                     <div class="sub-subtitle">
                         <div class="punter"></div>
                         <p>Somos Latam Digital</p>
@@ -207,19 +210,19 @@
         </section>
 
         <section class="service">
-            <div class="section-title">
+            <div class="section-title"  data-aos="fade-down" data-aos-duration="500">
                 <div class="sub-subtitle">
                     <div class="punter"></div>
                     <p>Somos Latam Digital</p>
                 </div>
-                <h2>Brindamos asesoramiento
+                <h2 data-aos="fade-down">Brindamos asesoramiento
                     técnico</h2>
             </div>
             <div class="container-services">
-                <div class="card-service">
+                <div class="card-service" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
                     <div class="info-card">
                         <p>Elaboración de Requerimientos Internacionales.</p>
-                        <a href="#" class="link-card">Leer más</a>
+                        <a href="servicios.html" class="link-card">Leer más</a>
                     </div>
                     <div class="container-img">
                         <div class="circle">
@@ -231,10 +234,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-service">
+                <div class="card-service" data-aos="fade-down" data-aos-delay="500" data-aos-duration="500">
                     <div class="info-card">
                         <p>Elaboración de Ofertas</p>
-                        <a href="#" class="link-card">Leer más</a>
+                        <a href="servicios.html" class="link-card">Leer más</a>
                     </div>
                     <div class="container-img">
                         <div class="circle">
@@ -245,10 +248,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-service">
+                <div class="card-service" data-aos="fade-down" data-aos-delay="600" data-aos-duration="500">
                     <div class="info-card">
                         <p>Presentación de consultas y observaciones.</p>
-                        <a href="#" class="link-card">Leer más</a>
+                        <a href="servicios.html" class="link-card">Leer más</a>
                     </div>
                     <div class="container-img">
                         <div class="circle">
@@ -259,10 +262,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-service">
+                <div class="card-service" data-aos="fade-down" data-aos-delay="700" data-aos-duration="500">
                     <div class="info-card">
                         <p>Revisión Legal de los resultados del Proceso.</p>
-                        <a href="#" class="link-card">Leer más</a>
+                        <a href="servicios.html" class="link-card">Leer más</a>
                     </div>
                     <div class="container-img">
                         <div class="circle">
@@ -276,7 +279,7 @@
             </div>
         </section>
 
-        <section class="why">
+        <section class="why" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-why-info">
                 <div class="info-why">
                     <div class="sub-subtitle">
@@ -292,7 +295,7 @@
                         alineado con las políticas globales más exigentes. Juntos, lograremos que tu empresa destaque en
                         el
                         sector público o privado, marcando el camino hacia tu éxito internacional.</p>
-                    <a href="#" class="link-why">
+                    <a href="#formulario" class="link-why">
                         <div class="liner"></div>
                         Ponerse en Contacto
                     </a>
@@ -300,7 +303,7 @@
             </div>
         </section>
 
-        <section class="testimonial">
+        <section class="testimonial" data-aos="fade-up" data-aos-duration="1000">
             <div class="info-test">
                 <div class="sub-subtitle">
                     <div class="punter"></div>
@@ -379,9 +382,9 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-contact">
-                <div class="info-method">
+                <div class="info-method" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
                     <div class="sub-subtitle">
                         <div class="punter"></div>
                         <p>Somos Latam Digital</p>
@@ -441,7 +444,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" id="formulario" data-aos="fade-left" data-aos-delay="500"
+                    data-aos-duration="1000">
                     <div class="sub-subtitle">
                         <div class="punter"></div>
                         <p>Somos Latam Digital</p>
@@ -461,8 +465,8 @@
             </div>
         </section>
 
-        <section class="paralax">
-            <div class="paralax-mensaje">
+        <section class="paralax" data-aos="fade-up" data-aos-duration="1000">
+            <div class="paralax-mensaje" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <h2>Nuestro equipo de expertos</h2>
             </div>
         </section>
@@ -470,9 +474,9 @@
     <!-- End Main -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
         <div class="container-footer">
-            <div class="header-footer">
+            <div class="header-footer" data-aos="fade-up" data-aos-duration="1000">
                 <a class="logo-footer" href="index.html">
                     <img src="build/img/logo-black.svg" alt="Logo de Latin Digital">
                     <p class="nombre">Latam <span>Digital</span></p>
@@ -519,17 +523,17 @@
                 </div>
             </div>
 
-            <div class="main-footer">
+            <div class="main-footer" data-aos="fade-up" data-aos-duration="1000">
                 <div class="container-link">
                     <div class="title-list">
                         <div class="punter"></div>
                         <h4>Enlaces</h4>
                     </div>
                     <ul class="list-nav-footer">
-                        <li><a href="#" class="link-footer">Inicio</a></li>
-                        <li><a href="#" class="link-footer">Nosotros</a></li>
-                        <li><a href="#" class="link-footer">Servicios</a></li>
-                        <li><a href="#" class="link-footer">Contacto</a></li>
+                        <li><a href="index.html" class="link-footer">Inicio</a></li>
+                        <li><a href="nosotros.html" class="link-footer">Nosotros</a></li>
+                        <li><a href="servicios.html" class="link-footer">Servicios</a></li>
+                        <li><a href="contacto.html" class="link-footer">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="container-link">
@@ -538,10 +542,10 @@
                         <h4>Nuestros Servicios</h4>
                     </div>
                     <ul class="list-nav-footer">
-                        <li><a href="#">Elaboración de Requerimientos Internacionales.</a></li>
-                        <li><a href="#">Elaboración de Ofertas</a></li>
-                        <li><a href="#">Presentación de consultas y observaciones.</a></li>
-                        <li><a href="#">Revisión Legal de los resultados del Proceso.</a></li>
+                        <li><a href="servicios.html">Elaboración de Requerimientos Internacionales.</a></li>
+                        <li><a href="servicios.html">Elaboración de Ofertas</a></li>
+                        <li><a href="servicios.html">Presentación de consultas y observaciones.</a></li>
+                        <li><a href="servicios.html">Revisión Legal de los resultados del Proceso.</a></li>
                     </ul>
                 </div>
                 <div class="container-maps">
@@ -578,8 +582,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script main -->
     <script src="/build/js/bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         $('.testimonio-carousel').owlCarousel({
             loop: true,

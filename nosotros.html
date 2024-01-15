@@ -23,13 +23,15 @@
 
     <!-- Css main -->
     <link rel="stylesheet" href="build/css/app.css">
+      <!-- animation -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-body>
 
     <!-- Header -->
     <header class="header">
-        <div class="container-cabe">
+        <div class="container-cabe" data-aos="fade-down" data-aos-duration="500" >
             <ul class="list-cabe">
                 <div class="list-1">
                     <li>
@@ -57,14 +59,14 @@
                 </li>
             </ul>
         </div>
-        <div class="container-nav">
+        <div class="container-nav" data-aos="fade-zoom-in" data-aos-delay="300">
             <a class="logo-nav" href="index.html">
-                <img src="build/img/logo-black.svg" alt="Logo de Latin Digital">
+                <img src="/build/img/logo-black.svg" alt="Logo de Latin Digital">
                 <p>Latam <span>Digital</span></p>
             </a>
             <div class="container-nav-list">
                 <ul class="list-nav">
-                    <li class="item-link"><a class="link" href="index.html">inicio <div class="line"></div>
+                    <li class="item-link"><a class="link " href="index.html">inicio <div class="line"></div>
                         </a></li>
                     <li class="item-link">
                         <a class="link active-link" href="nosotros.html">nosotros <div class="line"></div></a>
@@ -94,8 +96,8 @@
     <main class="main">
 
         <section class="hero-nosotros">
-            <div class="container-info-hero">
-                <div class="info-hero">
+            <div class="container-info-hero" data-aos="fade-right" data-aos-duration="500">
+                <div class="info-hero" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500">
                     <div class="sub-title">
                         <div class="punter"></div>
                         <p>Sobre Nosotros</p>
@@ -164,7 +166,7 @@
                                 calidad de vida de los ciudadanos y su relación con el estado.</p>
                         </div>
                     </div>
-                    <a href="#" class="btn-call btn-blue">Envíanos un mensaje</a>
+                    <a href="contacto.html#formulario" class="btn-call btn-blue">Envíanos un mensaje</a>
                 </div>
             </div>
         </section>
@@ -429,8 +431,13 @@
     <script src="build/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="build/vendor/php-email-form/validate.js"></script>
 
+    <!-- animate -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script main -->
-    <script src="build/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

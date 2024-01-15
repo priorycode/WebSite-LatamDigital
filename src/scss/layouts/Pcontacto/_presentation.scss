@@ -1,0 +1,68 @@
+.container-info-nosotros {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  padding: 0 1.6rem;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    padding: 0 2rem;
+  }
+  @include desktop {
+    padding: 0;
+    width: 95%;
+    max-width: 122rem;
+    margin: 15rem auto 0 auto;
+  }
+
+  .img-conten {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    @include tablet {
+      width: 35rem;
+      height: 49.7rem;
+    }
+    @include desktop {
+      width: 58.5rem;
+      height: 49.7rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.1rem;
+  }
+}
+
+.nosotros-info {
+  flex: 1;
+  .descrip {
+    margin-bottom: 2rem;
+  }
+}
+.container-contact-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+  @include tablet {
+    gap: 3rem;
+  }
+}
+
+.bg-gray {
+  background: #f4f4f4 !important;
+}
+.fill-purple {
+  fill: $purple !important;
+}
+
+.color-gray {
+  color: $gray !important;
+}
+.color-black {
+  color: $black !important;
+}

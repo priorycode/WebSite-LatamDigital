@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  transition: 0.5s all ease-in;
 }
 *,
 *:before,
@@ -11,8 +12,6 @@ body {
   font-family: $font-inter;
   font-size: 1.6rem;
   line-height: 1.8;
-
-  transition: background-color 0.3s ease;
 }
 p {
   margin: 0;
