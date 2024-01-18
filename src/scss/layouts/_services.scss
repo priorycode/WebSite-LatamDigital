@@ -85,7 +85,14 @@
         background: $purple;
       }
       svg {
-        fill: $white;
+        // fill: $white;
+        stroke: $white;
+        width: 2.4rem;
+        height: 2.4rem;
+        @include desktop{
+          width: 2.8rem;
+          height: 2.8rem;
+        }
       }
       @include tablet {
         display: flex;

@@ -56,13 +56,15 @@
     border-radius: 10rem;
     transition: 0.3s background-color ease-out;
     svg {
-      margin: 1.5rem;
-      fill: $purple;
+      // fill: $purple;
+      stroke: $purple;
+      width: 2.8rem;
+      height: 2.8rem;
     }
     &:hover {
       background: $purple;
       svg {
-        fill: $white;
+        stroke: $white;
       }
     }
   }

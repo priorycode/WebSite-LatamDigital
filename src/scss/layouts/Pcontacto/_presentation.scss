@@ -56,6 +56,17 @@
 .bg-gray {
   background: #f4f4f4 !important;
 }
+.stroke-icon-contact {
+  svg {
+    stroke: $purple !important;
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    @include desktop{
+      width: 2.8rem !important;
+      height: 2.8rem !important;
+    }
+  }
+}
 .fill-purple {
   fill: $purple !important;
 }
